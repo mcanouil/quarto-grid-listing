@@ -1,0 +1,7 @@
+---
+listing:
+  contents: talks
+  sort: "date desc"
+  template: listing-grid.ejs
+page-layout: full
+---
