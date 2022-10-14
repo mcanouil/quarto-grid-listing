@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "talks/2021-04-14-min2rien-reproducibility/index.html",
+    "href": "talks/2021-04-14-min2rien-reproducibility/index.html",
+    "title": "Min 2 Rien (French)",
+    "section": "",
+    "text": "Blog post: https://www.min2rien.fr/le-reseau-metier-min2rien-organise-sa-semaine-retours-dexperience-2021/.\nSlides: https://m.canouil.fr/slides/20210414-journey-reproducibility/.\nCode: https://github.com/mcanouil/journey-reproducibility."
+  },
+  {
+    "objectID": "talks/2021-04-15-rlille-reproducibility/index.html",
+    "href": "talks/2021-04-15-rlille-reproducibility/index.html",
+    "title": "R Lille Meetup",
+    "section": "",
+    "text": "Blog post: https://rlille.fr/posts/2021-03-26-journey-transparency/.\nMeetup: https://www.meetup.com/R-Lille/events/277031496/.\nSlides: https://m.canouil.fr/slides/20210415-journey-reproducibility/.\nCode: https://github.com/mcanouil/journey-reproducibility."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto-grid-listing",
+    "section": "",
+    "text": "R Lille Meetup\n          \n            My Journey To Transparency And Reproducibility.\nA journey towards a more transparent and reproducible work environment using Docker and `renv`.\n\n            \n              Mickaël CANOUIL\n              Apr 15, 2021\n            \n            slides\n            Code\n        \n      \n    \n  \n  \n    \n        \n          \n        \n        \n          Min 2 Rien (French)\n          \n            My Journey To Transparency And Reproducibility.A journey towards a more transparent and reproducible work environment using Docker and `renv`.\n            \n              Mickaël CANOUIL\n              Apr 14, 2021\n            \n            slides\n            Code\n        \n      \n    \n  \n\n\nNo matching items"
+  }
+]
