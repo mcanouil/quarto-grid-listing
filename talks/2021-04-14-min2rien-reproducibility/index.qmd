@@ -14,8 +14,12 @@ categories:
   - renv
   - reproducibility
   - french
-slides: https://m.canouil.fr/slides/20210414-journey-reproducibility/
-code: https://github.com/mcanouil/journey-reproducibility
+slides:
+  text: "my best ever slides"
+  url: https://m.canouil.fr/slides/20210414-journey-reproducibility/
+code: 
+  url: https://github.com/mcanouil/journey-reproducibility
+  text: GitHub
 ---
 
 :::{style="position:relative;padding-top:56.25%;"}

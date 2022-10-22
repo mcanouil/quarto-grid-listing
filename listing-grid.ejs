@@ -20,7 +20,7 @@ const imgHeight = "100%";
     <div class="quarto-grid-item card h-100 <%-`card-${align}`%><%= hideBorders ? ' borderless' : '' %>">
       <% if (item.image) { %>
         <p class="card-img-top">
-          <img src="<%= item.image %>" class="thumbnail-image card-img" style="height: 150px;" alt="<%= item['image-alt'] %>">
+          <img src="<%= item.image %>" class="thumbnail-image card-img" style="height: auto;" alt="<%= item['image-alt'] %>">
         </p>
       <% } else { %>
         <div class="card-img-bg" <%= imgHeight ? ` style="height: ${imgHeight};"` : '' %>>&nbsp;</div>
@@ -43,13 +43,44 @@ const imgHeight = "100%";
               <% if ('date') { %><div class="listing-date"><%= item.date %></div><% } %>
             </div>
           <% } %>
-
-          <% if ('slides') { %>
-            <a class="btn btn-outline-primary btn-page-header btn-sm" href="<%= item.slides %>" target="_blank" rel="noopener">slides</a>
-          <% } %>
-          <% if ('code') { %>
-            <a class="btn btn-outline-primary btn-page-header btn-sm" href="<%= item.code %>" target="_blank" rel="noopener">Code</a>
-          <% } %>
+          <style>
+            .listing-categories .listing-category .listing-href {
+              color: inherit; /* blue colors for links too */
+              text-decoration: inherit; /* no underline */
+            }
+          </style>
+          <div class="listing-categories" style="padding-top: 1em;">
+            <% if ('slides') { %>
+              <div class="listing-category">
+                <% if (item.slides.url) { %>
+                  <a class="listing-href" href="<%= item.slides.url %>" target="_blank" rel="noopener">
+                    <% if (item.slides.text) { %>
+                      <%= item.slides.text %>
+                    <% } else { %>
+                      Slides
+                    <% } %>
+                  </a>
+                <% } else { %>
+                  <a class="listing-href" href="<%= item.code %>" target="_blank" rel="noopener">Code</a>
+                <% } %>
+              </div>
+            <% } %>
+            <% if ('code') { %>
+              <div class="listing-category">
+                <% if (item.code.url) { %>
+                  <a class="listing-href" href="<%= item.code.url %>" target="_blank" rel="noopener">
+                    <% if (item.code.text) { %>
+                      <%= item.code.text %>
+                    <% } else { %>
+                      Code
+                    <% } %>
+                  </a>
+                <% } else { %>
+                  <a class="listing-href" href="<%= item.code %>" target="_blank" rel="noopener">Code</a>
+                <% } %>
+              </div>
+            <% } %>
+          </div>
         </div>
       <% } %>
 
